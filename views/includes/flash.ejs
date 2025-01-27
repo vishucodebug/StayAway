@@ -1,0 +1,52 @@
+<!-- for showing new ,update review and listings -->
+<% if(success && success.length){ %>
+    <div class="alert alert-success col-6 mt-3 alert-dismissible fade show" "  role="alert">
+        <h5 class="alert-heading m-0 p-0 " "> Well done !</h5>
+        <hr/>
+        <p class="mb-0" > <%= success %></p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<% } %>
+
+
+<!-- for showing delete review and listings -->
+<% if(success1 && success1.length){ %>
+    <div class="alert alert-warning col-6 mt-3 alert-dismissible fade show"   role="alert">  
+        <h5 class="alert-heading m-0 p-0 " "> Deleted !</h5>
+        <hr/>
+        <p class="mb-0" > <%= success1 %></p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<% } %>
+
+
+<!-- for showing welcome page after signup -->
+<% if(success2 && success2.length){ %>
+    <div class="alert alert-primary col-6 mt-3 alert-dismissible fade show" "  role="alert">
+        <h5 class="alert-heading m-0 p-0 " "> <%= success2%> <b><u>StayAway</u></b> &nbsp;! </h5>
+        <hr/>
+        <p class="mb-0" > <i>Your Easy Solution  for Accommodation Rental. </i> </p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<% } %>
+
+
+<!-- for handling invalid path of review and listings -->
+<% if(error && error.length){ %>
+    <div class="alert alert-danger col-6  mt-3 alert-dismissible fade show" "  role="alert">
+        <h5 class="alert-heading m-0 p-0 " > Warning!</h5>
+        <hr/>
+        <p class="mb-0" > <%= error %></p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <% } %>
+
+<!-- search error handle -->
+  <% if(error1 && error1.length){ %>
+    <div class="alert alert-danger col-6  mt-3 alert-dismissible fade show" role="alert">
+        <h5 class="alert-heading m-0 p-0 " > Warning!</h5>
+        <hr/>
+        <p class="mb-0" > <%= error1 %></p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <% } %>

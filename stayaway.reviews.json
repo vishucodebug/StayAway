@@ -1,0 +1,112 @@
+[{
+  "_id": {
+    "$oid": "66892c5e85f22af0e0418f56"
+  },
+  "comment": "This is best stay ever.\r\n",
+  "rating": 3,
+  "createdAt": {
+    "$date": "2024-07-06T11:26:41.008Z"
+  },
+  "author": {
+    "$oid": "66880322e68dd6c456d13e2e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711534dc2138a930f6de3d2"
+  },
+  "comment": "best place to stay and  highly recomended.",
+  "rating": 4,
+  "createdAt": {
+    "$date": "2024-10-17T17:59:39.504Z"
+  },
+  "author": {
+    "$oid": "66880322e68dd6c456d13e2e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67115448c2138a930f6de45c"
+  },
+  "comment": "demo review for the checking of the review page.",
+  "rating": 4,
+  "createdAt": {
+    "$date": "2024-10-17T17:59:39.504Z"
+  },
+  "author": {
+    "$oid": "66880322e68dd6c456d13e2e"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67115814c2138a930f6de4f0"
+  },
+  "comment": " Best Place to visit on weekend.\r\n\r\n            ",
+  "rating": 5,
+  "createdAt": {
+    "$date": "2024-10-17T17:59:39.504Z"
+  },
+  "author": {
+    "$oid": "67115619c2138a930f6de4a8"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711582cc2138a930f6de501"
+  },
+  "comment": " Wrost place very bad experience.\r\n            ",
+  "rating": 1,
+  "createdAt": {
+    "$date": "2024-10-17T17:59:39.504Z"
+  },
+  "author": {
+    "$oid": "67115619c2138a930f6de4a8"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6711584ec2138a930f6de510"
+  },
+  "comment": " My favourate place . I love to spend my time here.\r\n            ",
+  "rating": 5,
+  "createdAt": {
+    "$date": "2024-10-17T17:59:39.504Z"
+  },
+  "author": {
+    "$oid": "67115619c2138a930f6de4a8"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67115871c2138a930f6de520"
+  },
+  "comment": "Very authentic and very traditional place must visit in the jaipur",
+  "rating": 4,
+  "createdAt": {
+    "$date": "2024-10-17T17:59:39.504Z"
+  },
+  "author": {
+    "$oid": "67115619c2138a930f6de4a8"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677ec169cd61e0a2d36198df"
+  },
+  "comment": "That was awesome experience.\r\n",
+  "rating": 3,
+  "createdAt": {
+    "$date": "2025-01-08T17:54:56.062Z"
+  },
+  "author": {
+    "$oid": "66880322e68dd6c456d13e2e"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,117 @@
+<% layout('/layouts/boilerplate.ejs') -%>
+
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body style="background-color:#bde0fe;">
+   
+    <!-- <%- include("../includes/navbar.ejs") %> -->
+       
+  <!-- main image section -->
+
+  <section class="imageslider">
+    <div class="w3-content w3-display-container">
+     <div class="w3-display-container mySlides  ">
+        <img class="mySlide req "  src="https://upload.wikimedia.org/wikipedia/commons/2/21/Taj-Hotel_Mumbai.jpg" alt="img" >
+        <div class="w3-display-topleft w3-container ">
+          <h2>Taj Hotel, Mumbai</h2>
+          <p>India's no 1 Hotel</p>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides">
+        <img class="mySlide"src="https://wallpapers.com/images/hd/beach-desktop-1920-x-1080-background-xypcfl0aj3nxly7j.jpg" alt="img" >
+        <div class="w3-display-topmiddle w3-container">
+          <h3>"Life is better at the beach, especially when that beach is in the Maldives."</h3>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides">
+        <img class="mySlide" src="https://i.pinimg.com/originals/1e/be/bb/1ebebb4b4a3b0a5c539fed26dbbadf88.jpg" alt="img" ">
+        <div class="w3-display-topright w3-container ">
+         <h4>The Burj Khalifa &nbsp;  &nbsp; &nbsp; World's tallest building.</h4>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides">
+        <img class="mySlide"  src="https://cdn.sanity.io/images/ocl5w36p/production/02d5266ba2e7a05097c8aa5c6f5533095f8b50fc-3840x1860.jpg" alt="img" ">
+        <div class="w3-display-topright w3-container">
+         <h6>Pink City, Jaipur</h6>
+        </div>
+      </div>
+   
+   
+    </div>
+  </section>
+
+
+   <!-- search card section -->
+    <section>     
+    <div class="container text-center searchCardContainer">
+        <h2 id="searchheading">Explore By City </h2>
+        <div class="row row-cols-2 searchCard">
+            <div class="w3-third citycard" >
+                <div class="col mt-4">
+                  <div class="w3-card w3-hover-shadow w3-display-container w3-animate-left  ">
+                     <img src="https://media.gettyimages.com/id/482018359/photo/india-gate-new-delhi.jpg?s=612x612&w=0&k=20&c=XA9Es3KysfVLi205fjczUo1e_EAk3yDYJEoDVV6zGbk=" style="width:100%">
+                     <div class="w3-display-bottommiddle w3-large">
+                     <form id="searchForm"   onclick="submitForm()" method="post" action="/listings/search">
+                            <input class="searchBtn" name="Search" type="submit" value="Delhi">
+                    </form>
+                    </div>  
+                  </div>
+                </div>
+            </div>
+            <div class="w3-third" >
+                <div class="col mt-4">
+                    <div class="w3-card w3-hover-shadow w3-display-container w3-animate-top ">
+                      <img src="https://media.gettyimages.com/id/520932488/photo/india-uttar-pradesh-lucknow-bara-imambara-and-asafi-mosque.jpg?s=612x612&w=0&k=20&c=NG-0CbqId3nSB56RuEYUPr_dqdfTIu8XrHswVKabDVo=" style="width:100%">
+                      <div class="w3-display-bottommiddle w3-large">
+                        <form id="searchForm"   onclick="submitForm()" method="post" action="/listings/search">
+                           <input class="searchBtn" name="Search" type="submit" value="Lucknow">
+                       </form> 
+                      </div>  
+                    </div>
+                    </div>
+            </div>
+            <div class="w3-third" >
+                <div class="col mt-4">
+                    <div class="w3-card w3-hover-shadow w3-display-container w3-animate-right ">
+                      <img src="https://media.gettyimages.com/id/520120864/photo/bombay-at-twilight.jpg?s=612x612&w=0&k=20&c=0edqDWGDKOSDEmbWHQlk7tanjYO0qAQdjkPwcG-jx2Q=" style="width:100%">
+                      <div class="w3-display-bottommiddle w3-large">
+                        <form id="searchForm"   onclick="submitForm()" method="post" action="/listings/search">
+                           <input class="searchBtn" name="Search" type="submit" value="Mumbai">
+                        </form> 
+                      </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third" >
+                <div class="col mt-4">
+                    <div class="w3-card w3-hover-shadow w3-display-container  w3-animate-bottom ">
+                      <img src="https://media.gettyimages.com/id/521656286/photo/beach-in-goa-india.jpg?s=612x612&w=0&k=20&c=cgJryJqtc6e68k14_MXzohmgiSLon6kOqw5Ilus0v2o=" style="width:100%">
+                      <div class="w3-display-bottommiddle w3-large ">
+                        <form id="searchForm"   onclick="submitForm()" method="post" action="/listings/search">
+                           <input class="searchBtn" name="Search" type="submit" value="Goa">
+                        </form>
+                      </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="col mt-4">
+                    <div class="w3-card w3-hover-shadow w3-display-container  w3-animate-bottom ">
+                      <img src="https://media.gettyimages.com/id/636955712/photo/amer-fort-amber-fort-at-amber-near-jaipur-rajasthan-india.jpg?s=612x612&w=0&k=20&c=UISBvN7q6ACciTJXCA9CuZhNmwk5NocFAULVq3C25pA=" style="width:100%">
+                      <div class="w3-display-bottommiddle w3-large">
+                        <form id="searchForm"   onclick="submitForm()" method="post" action="/listings/search">
+                            <input class="searchBtn" name="Search" type="submit" value="Jaipur">
+                        </form>
+                      </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/public/js/script.js">
+    </script>
+</body>
+</html>

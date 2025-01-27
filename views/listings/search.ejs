@@ -1,0 +1,35 @@
+<% layout('/layouts/boilerplate.ejs') -%> 
+
+<style>
+    body{
+        background-color: #bde0fe;
+    }
+</style>
+<body>
+
+
+    <h3 class="mt-3">All listings of <i><b><%= Search%></b></i></h3>
+    <!-- <form method="GET" action="/listings/new">
+        <button>Create New Listing</button>
+    </form> -->
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1  card-f">
+        <% for (let listing of searchListings) { %>
+            <a href="/listings/<%=listing._id %>" class="listing-link">
+                <div class="card col listing-card card-full" >
+                    <img src="<%=listing.image%>" class="card-img-top" alt="listings_image" style="height:20rem">
+                    <div class="card-img-overlay"></div>
+                    <div class="card-body ">
+                      <p class="card-text">
+                       <b> <%=listing.title %> </b><br/>
+                        <b>&#8377;</b><%=listing.price.toLocaleString("en-IN") %>/ per night
+                       </p>
+                    </div>
+                  </div>  
+            </a>
+        <% } %>
+    </div>
+
+
+
+
+</body>
